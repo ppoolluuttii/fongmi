@@ -10,7 +10,7 @@
       "searchable": 1,
       "filterable": 1,
       "changeable": 0,
-      "ext": "file://192.168.1.2/share/json/alist.json"
+      "ext": "https://raw.githubusercontent.com/ppoolluuttii/fongmi/main/alist.json"
     },
     {
       "key": "WebDAV",
