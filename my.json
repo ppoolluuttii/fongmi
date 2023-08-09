@@ -1,6 +1,6 @@
 {
-  "spider": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;af37ed94ebfb6af49a33d48a6fe005da",
-  "wallpaper": "http://饭太硬.ga/深色壁纸/api.php",
+  "spider": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;1de1a94d0429f343a35986ef5e9145d6",
+  "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
   "sites": [
     {
       "key": "本地",
@@ -35,7 +35,15 @@
       "api": "csp_Bili",
       "searchable": 1,
       "changeable": 0,
-      "ext": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/bili.json"
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "ext": {
+        "json": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/bili.json",
+        "type": "帕梅拉#太极拳#广场舞#演唱会",
+        "cookie": ""
+      }
     },
     {
       "key": "泥巴",
@@ -46,13 +54,45 @@
       "changeable": 1
     },
     {
+      "key": "星星",
+      "name": "星星",
+      "type": 3,
+      "api": "csp_Star",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
       "key": "獨播",
       "name": "獨播",
       "type": 3,
       "api": "csp_XPathMacFilter",
       "searchable": 1,
       "changeable": 1,
-      "ext": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/duboku.json"
+      "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/duboku.json"
+    },
+    {
+      "key": "廠長",
+      "name": "廠長",
+      "type": 3,
+      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/czzy_open.js",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "愛看",
+      "name": "愛看",
+      "type": 3,
+      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/ikanbot_open.js",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "快看",
+      "name": "快看",
+      "type": 3,
+      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/kkys_open.js",
+      "searchable": 1,
+      "changeable": 1
     },
     {
       "key": "量子",
@@ -138,15 +178,6 @@
       ]
     },
     {
-      "key": "熊熊",
-      "name": "熊熊",
-      "type": 1,
-      "api": "https://v.3412.net.cn/macapi.php/provide/vod",
-      "playUrl": "https://player.3412.net.cn/?url=",
-      "searchable": 1,
-      "changeable": 1
-    },
-    {
       "key": "櫻花",
       "name": "櫻花",
       "type": 3,
@@ -171,10 +202,10 @@
       "changeable": 1
     },
     {
-      "key": "土狗",
-      "name": "土狗",
+      "key": "玩偶",
+      "name": "玩偶",
       "type": 3,
-      "api": "csp_TuGou",
+      "api": "csp_Wogg",
       "searchable": 1,
       "changeable": 0
     },
@@ -274,13 +305,23 @@
   ],
   "rules": [
     {
+      "name": "星星",
+      "hosts": [
+        "aws.ulivetv.net"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
       "name": "量子廣告",
       "hosts": [
         "vip.lz",
         "hd.lz"
       ],
       "regex": [
-        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
       ]
     },
     {
@@ -290,7 +331,8 @@
         "hd.ffzy"
       ],
       "regex": [
-        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
       ]
     },
     {
