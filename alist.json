@@ -3,15 +3,15 @@
   "drives": [
     {
       "name": "xiaoya",
-      "server": "http://192.168.1.2:5678"
+      "server": "http://192.168.2.1:5678"
     },
     {
       "name": "istoreos",
-      "server": "http://192.168.1.2:5244"
+      "server": "http://192.168.2.1:5244"
     },
     {
       "name": "电脑",
-      "server": "http://192.168.1.40:5244"
+      "server": "http://192.168.2.40:5244"
     },
     {
       "name": "七米藍",
