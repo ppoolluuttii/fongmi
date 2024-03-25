@@ -2,8 +2,14 @@
   "vodPic": "https://s1.ax1x.com/2023/04/04/pp5M5Jx.png",
   "drives": [
     {
-      "name": "xiaoya",
-      "server": "http://192.168.2.1:5678"
+      "name": "istore",
+      "server": "https://my.jjfly.eu.org:8",
+      "search": true,
+      "hidden": false,
+      "login": {
+        "username": "jim",
+        "password": "jim"
+      }
     },
     {
       "name": "istoreos",
@@ -28,6 +34,22 @@
     {
       "name": "梓澪",
       "server": "https://zi0.cc"
+    },
+    {
+      "name": "範本",
+      "server": "https://one.fongmi.com",
+      "search": true,
+      "hidden": false,
+      "login": {
+        "username": "fongmi",
+        "password": "fongmi"
+      },
+      "params": [
+        {
+          "path": "/安齋拉拉",
+          "pass": "18181818"
+        }
+      ]
     }
   ]
 }
