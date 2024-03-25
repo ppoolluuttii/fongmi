@@ -2,6 +2,22 @@
   "vodPic": "https://x.imgs.ovh/x/2023/09/05/64f680bb030b4.png",
   "drives": [
     {
+      "name": "NAS",
+      "server": "https://my.jjfly.eu.org:8",
+      "search": true,
+      "hidden": false,
+      "login": {
+        "username": "jim",
+        "password": "jim"
+      },
+      "params": [
+        {
+          "path": "/安齋拉拉",
+          "pass": "18181818"
+        }
+      ]
+    }，
+    {
       "name": "小雅",
       "server": "http://alist.xiaoya.pro"
     },
@@ -27,7 +43,7 @@
     },
     {
       "name": "範本",
-      "server": "https://my.jjfly.eu.org:8",
+      "server": "https://xxxxxxx:x",
       "search": true,
       "hidden": false,
       "login": {
