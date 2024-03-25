@@ -2,7 +2,7 @@
   "vodPic": "https://s1.ax1x.com/2023/04/04/pp5M5Jx.png",
   "drives": [
     {
-      "name": "istore",
+      "name": "NAS",
       "server": "https://my.jjfly.eu.org:8",
       "search": true,
       "hidden": false,
