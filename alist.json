@@ -3,7 +3,7 @@
   "drives": [
     {
       "name": "NAS",
-      "server": "https://my.jjfly.eu.org:8",
+      "server": "http://192.168.2.1:5244",
       "search": true,
       "hidden": false,
       "login": {
