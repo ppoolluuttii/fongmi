@@ -10,8 +10,8 @@
     {
       "name": "我的nas",
       "server": "http://192.168.2.1:8888",
-      "user": "jim",
-      "pass": "abcdef"
+      "user": "",
+      "pass": ""
     }
   ]
 }
